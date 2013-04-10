@@ -537,10 +537,10 @@ sub setup_installer {
     );
     
     foreach my $file (@req_files) {
-        $self->_generate_file($file, 1, \%vars);
+        $self->_generate_file($file, 1, { %vars });
     }
     foreach my $file (@opt_files) {
-        $self->_generate_file($file, 0, \%vars);
+        $self->_generate_file($file, 0, { %vars });
     }
 }
 
