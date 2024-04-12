@@ -255,7 +255,8 @@ to C<default_template>.
 has 'default_template_default' => (
     is => 'ro',
     isa => 'Str',
-    predicate => 'has_default_template_default'
+    predicate => 'has_default_template_default',
+    default => ''
 );
 
 =attr init_template
@@ -313,7 +314,8 @@ to C<install_template>.
 has 'install_template_default' => (
     is => 'ro',
     isa => 'Str',
-    predicate => 'has_install_template_default'
+    predicate => 'has_install_template_default',
+    default => "make install\n"
 );
 
 =attr package_depends
@@ -454,7 +456,8 @@ to C<postinst_template>.
 has 'postinst_template_default' => (
     is => 'ro',
     isa => 'Str',
-    predicate => 'has_postinst_template_default'
+    predicate => 'has_postinst_template_default',
+    default => ''
 );
 
 =attr postrm_template
@@ -483,7 +486,8 @@ to C<postrm_template>.
 has 'postrm_template_default' => (
     is => 'ro',
     isa => 'Str',
-    predicate => 'has_postrm_template_default'
+    predicate => 'has_postrm_template_default',
+    default => ''
 );
 
 =attr rules_template
